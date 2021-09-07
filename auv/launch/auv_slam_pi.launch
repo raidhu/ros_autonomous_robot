@@ -1,0 +1,7 @@
+<launch>
+	<include file="$(find auv)/launch/auv_bringup.launch" />
+	<include file="$(find auv)/launch/auv_navigation.launch" />
+
+					<!--  ************** gmapping ***************  -->
+	<node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen"/>
+</launch>
